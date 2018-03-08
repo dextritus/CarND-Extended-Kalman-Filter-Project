@@ -11,7 +11,7 @@ Measurements and process noises were provided. As a measure of filter performanc
 In this project, I:
 
 * completed the RMSE, and the Jacobian for the measurement equation codes
-* completed the `Predict()`,  `Update()` and `UpdateEKF` methods of the kalman_filter class, depending on the type of sensor data used
+* completed the `Predict()`,  `Update()` and `UpdateEKF()` methods of the kalman_filter class, depending on the type of sensor data used
 * initialized the initial state values, together with the measurement noise and the initial covariance matrices
 * updated the state transition matrix `F` and the process noise covariance matrix `Q` according to the time elapsed since last measurement
 * tested the implementation on the simulator data provided
@@ -19,7 +19,7 @@ In this project, I:
   * making the initial state covariance smaller, since the initial states are very close to the real ones; therefore there is no need for the filter to overshoot in the first time steps
   * making the process noise matrix slightly larger, to account for larger possible changes in velocity (turns with sharper radii, for example)
 
-The RMSE error achieved when the filter was applied to Dataset1, with the alterations mentioned above, is: [0.0912, 0.0833, 0.3932, 0.4347] for the x position, y position, x velocity and y velocity respectively. 
+The RMSE error achieved when the filter was applied to Dataset1, with the alterations mentioned above, is: [0.0912, 0.0833, 0.3932, 0.4347]' for the x position, y position, x velocity and y velocity respectively. 
 
 The editor I used was Sublime 3.0.
 
